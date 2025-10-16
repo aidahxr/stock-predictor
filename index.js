@@ -1,5 +1,10 @@
 import { dates } from '/utils/dates'
+import OpenAI from 'openai'
 
+const client = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+
+})
 const tickersArr = []
 
 const generateReportBtn = document.querySelector('.generate-report-btn')
@@ -60,7 +65,10 @@ async function fetchStockData() {
 }
 
 async function fetchReport(data) {
-    /** AI goes here **/
+    const response = await client.responses.create({
+        model: 'gpt-3.5-turbo',
+        input: "Write a sentence bedtime story about a unicorn",
+    })
 }
 
 function renderReport(output) {
