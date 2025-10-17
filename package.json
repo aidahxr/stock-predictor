@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
+    "module-alias": "^2.2.3",
     "node-fetch": "^3.3.2",
     "ollama": "^0.6.0",
-    "openai": "^6.3.0",
-    "vite": "latest"
+    "openai": "^6.3.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.10"
   }
 }

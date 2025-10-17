@@ -1,9 +1,9 @@
-import { dates } from '/utils/dates'
+import { dates } from './utils/dates.js'
 import OpenAI from 'openai'
+import "dotenv/config"
 
-const client = new OpenAI({
+const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
-
 })
 const tickersArr = []
 
@@ -65,10 +65,7 @@ async function fetchStockData() {
 }
 
 async function fetchReport(data) {
-    const response = await client.responses.create({
-        model: 'gpt-3.5-turbo',
-        input: "Write a sentence bedtime story about a unicorn",
-    })
+    console.log(data);
 }
 
 function renderReport(output) {
