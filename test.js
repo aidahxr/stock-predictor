@@ -12,7 +12,7 @@ const input = [
   },
   {
     role: "user",
-    content: "I am just tired of life. I'm scared of the future. I don't know what to do. I'm seas away from my family and my girl left me. What do I do?"
+    content: "Hey. My stomach hurts. What should I do?",
   }
 ];
 
