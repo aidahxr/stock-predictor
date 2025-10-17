@@ -1,6 +1,7 @@
 {
   "name": "Scrim-s05qcfg",
   "description": "https://scrimba.com/the-ai-engineer-path-c02v/~03",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2",
+    "ollama": "^0.6.0",
+    "openai": "^6.3.0",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }
